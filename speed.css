@@ -1,0 +1,191 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Typing Speed Test Game */
+
+ :root {
+  --main-color: #2196f3;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+.game {
+  background-color: #eee;
+  min-height: 100vh;
+}
+.container {
+  margin: auto;
+  max-width: 900px;
+}
+.name {
+  background-color: var(--main-color);
+  color: white;
+  padding: 20px;
+  font-size: 25px;
+  text-align: center;
+  font-weight: bold;
+}
+.message {
+  background-color: white;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 6px;
+  text-align: center;
+}
+.message span {
+  font-weight: bold;
+  color: #009688;
+}
+.message span::before {
+  content: "[ ";
+}
+.message span::after {
+  content: " ]";
+}
+.start {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #009688;
+  color: white;
+  padding: 20px;
+  cursor: pointer;
+}
+.the-word {
+  text-align: center;
+  font-weight: bold;
+  font-size: 60px;
+  color: var(--main-color);
+  user-select: none;
+}
+.input {
+  margin: 15px 0;
+  width: 100%;
+  display: block;
+  padding: 15px;
+  border: 3px solid var(--main-color);
+  font-size: 20px;
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 6px;
+  caret-color: var(--main-color);
+}
+.input:focus {
+  outline: none;
+}
+.upcoming-words {
+  background-color: white;
+  margin: 15px 0;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.upcoming-words div {
+  background-color: var(--main-color);
+  color: white;
+  font-weight: bold;
+  margin: 4px;
+  padding: 10px;
+  border-radius: 6px;
+}
+.control {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding: 15px;
+}
+.control span {
+  font-weight: bold;
+  color: #009688;
+}
+.finish {
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+  padding: 15px;
+}
+.finish .good {
+  color: var(--main-color);
+}
+.finish .bad {
+  color: red;
+}
+
+.levelchoos{
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 20px 0 20px 0;
+  width: fit-content;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+ 
+}
+.levelchoos button{
+  background-color: #2196f3;
+  color: white;
+  
+  padding: 10px;
+  border-radius:10px ;
+  -webkit-border-radius:10px ;
+  -moz-border-radius:10px ;
+  -ms-border-radius:10px ;
+  -o-border-radius:10px ;
+  cursor: pointer;
+   outline: none; 
+  border: none;
+  font-size: 15px;
+}
+.levelchoos button:focus{
+ background-color:rgb(103, 70, 31);
+}
+.levelchoos .active{
+ background-color:rgb(103, 70, 31);
+}
+
+.choose{
+ transform: translateX(-50%);
+ left: 50%;
+ position: relative;
+ margin-top: 20px;
+ padding: 10px;
+ background-color:#009688;
+ width: fit-content;
+ color: rgb(34, 3, 3);
+ border-radius: 2px;
+ -webkit-border-radius: 2px;
+ -moz-border-radius: 2px;
+ -ms-border-radius: 2px;
+ -o-border-radius: 2px;
+ font-size: 26px;
+ font-weight: bold;
+}
+
+  /* الوقت  */
+div .time-local{
+ position: relative;
+ font-size: 30px;
+ font-weight: bold;
+ color: rgb(19, 63, 48);
+ 
+ text-align: center;
+ padding: 20px;
+
+ align-items: center;
+ 
+}
+div .result{
+  padding: 20px;
+  color: rgb(156, 164, 9);
+} 
+
